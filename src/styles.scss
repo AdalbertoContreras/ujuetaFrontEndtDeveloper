@@ -1,0 +1,301 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --ancho-maximo-default: 650px;
+    --amarillo-opaco: #EAAE00;
+    --amarillo: #FEC400;
+    --blanco: #fff;
+    --gris-oscuro: #30303D;
+    --azul: #00C0CB;
+    --azul-boton-contact: #00C0CB;
+}
+
+.hidden-lg {
+    display: flex;
+}
+
+@media screen and (max-width:992px) {
+    .hidden-lg
+    {
+        display: none!important;
+    }
+}
+
+
+.button-contact-us{
+    height: 40px;
+    padding: 6px 15px;
+    margin: 0 20px 0 0;
+    background: var(--azul-boton-contact);
+    color: white;
+    border-width: 0;
+    outline: 0;
+    border-radius: 6px;
+}
+
+.button-buy{
+    @extend .button-contact-us;
+    width: 110px;
+    border-radius: 20px;
+    height: 32px;
+    margin: 0;
+}
+
+.button-our-service{
+    @extend .button-contact-us;
+    background: var(--amarillo);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.bg-menu {
+    background: var(--amarillo);
+}
+
+.titulo-logo{
+    font-size: 0.8rem;
+    line-height: 10px;
+    color: var(--blanco)!important;
+}
+.subtitulo-logo{
+    font-size: 0.7rem;
+    line-height: 10px;
+    color: var(--blanco)!important;
+}
+.logo-company{
+    width: 40px;
+}
+
+.navbar{
+
+}
+
+.visible{
+    display: flex!important;
+}
+
+.none{
+    display: none!important;
+}
+
+.nav-item{
+    color: var(--blanco)!important;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+
+.contenedor-menu{
+    display: flex;
+    justify-content: center;
+    background: var(--amarillo-opaco);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 65px;
+    color: var(--blanco)!important;
+
+    .menu-full{
+        max-width: var(--ancho-maximo-default);
+    }
+}
+
+.buscar-input{
+    width: 115px;
+    height: 33px;
+    border-width: 0;
+    background: var(--amarillo);
+}
+
+.buscar-input::placeholder {
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
+.buscar-input::-webkit-input-placeholder {
+    color: var(--blanco);
+    font-size: 1rem;
+}
+.buscar-input::-moz-placeholder {
+    color: var(--blanco);
+    font-size: 1rem;
+}
+.buscar-input:-ms-input-placeholder {
+    color: var(--blanco);
+    font-size: 1rem;
+}
+.buscar-input:-moz-placeholder {
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
+.buscar-button{
+    background: var(--azul);
+    height: 33px;
+    width: 40px;
+    border-width: 0;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    .contenido{
+        max-width: var(--ancho-maximo-default);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contendor-amarillo{
+    @extend .contenedor;
+    background: var(--amarillo);
+}
+
+.contenedor-blanco{
+    @extend .contenedor;
+    background: var(--blanco);
+}
+
+.contenedor-footer{
+    @extend .contenedor;
+    background: var(--gris-oscuro);
+}
+
+.contenedor-azul{
+
+}
+
+.titulo{
+    font-size: 2.7rem;
+    color: var(--blanco);
+    line-height: 45px;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size: 1.2rem;
+    color: var(--blanco);
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.titulo-dark{
+    @extend .titulo;
+    color: var(--gris-oscuro);
+}
+
+.subtitulo-dark{
+    @extend .subtitulo;
+    color: var(--gris-oscuro);
+}
+
+.navbar {
+    background: linear-gradient(to left,var(--amarillo-opaco), var(--amarillo-opaco));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
+.card-1{
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    img{
+        width: 100%;
+        height: auto;
+        border-style: solid;
+        border-width: 4px;
+        color: var(--blanco);
+        margin-bottom: 1rem;
+    }
+    .titulo-card{
+        font-size: 1.2rem;
+        color: var(--blanco);
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 0.25rem;
+        font-weight: bold;
+    }
+    .subtitulo-card{
+        width: 100%;
+        font-size: 0.8rem;
+        color: var(--blanco);
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .titulo-card-dark{
+        @extend .titulo-card;
+        color: var(--gris-oscuro);
+    }
+    .subtitulo-card-dark{
+        @extend .subtitulo-card;
+        color: var(--gris-oscuro);
+    }
+    .text-pequeño-card-dark{
+        @extend .subtitulo-card-dark;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .text-extra-pequeño-card-dark{
+        @extend .subtitulo-card-dark;
+        font-size: 0.7rem;
+    }
+    .text-card-blue{
+        @extend .subtitulo-card;
+        color: var(--azul);
+    }
+    .text-card-blue-negrita{
+        @extend .text-card-blue;
+        font-weight: bold;
+    }
+    .border{
+        border-width: 2px;
+        border-color: #DDDDDD;
+        border-style: solid;
+    }
+}
+
+.footer{
+
+    .titulo-footer{
+        font-size: 1.5rem;
+        color: var(--blanco);
+        margin-bottom: 15px;
+    }
+    .subtitulo-footer{
+        font-size: 0.8rem;
+        color: var(--blanco);
+        margin-bottom: 5px;
+    }
+}
+
+.max-width-440{
+    max-width: 440px;
+}
+
+.sin-borde{
+    border-width: 0!important;
+}
+
+.logo-red-social{
+    width: 30px!important;
+    height: 30px!important;
+    margin: 0 5px;
+}
+
+.logo-red-social-footer{
+    width: 23px!important;
+    height: 23px!important;
+    margin: 0 5px;
+}
