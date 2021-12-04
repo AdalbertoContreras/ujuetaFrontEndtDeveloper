@@ -133,9 +133,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .buscar-button{
     background: var(--azul);
-    height: 33px;
-    width: 40px;
+    height: 33px!important;
+    width: 50px!important;
     border-width: 0;
+    img{
+        width: 20px;
+    }
+}
+
+.email-button{
+    background: var(--azul);
+    height: 50px!important;
+    width: 80px!important;
+    border-width: 0;
+    img{
+        width: 30px;
+    }
 }
 
 .contenedor{
@@ -298,4 +311,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     width: 23px!important;
     height: 23px!important;
     margin: 0 5px;
+}
+
+.fondo{
+    background-image: url("~src/assets/imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }

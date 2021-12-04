@@ -16,6 +16,7 @@ import { ContenedorOchoComponent } from './component/contenedor-ocho/contenedor-
 import { FooterComponent } from './component/footer/footer.component';
 import {CommonModule} from "@angular/common";
 import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -29,14 +30,15 @@ import {MatButtonModule} from "@angular/material/button";
     ContenedorSeisComponent,
     ContenedorSieteComponent,
     ContenedorOchoComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
